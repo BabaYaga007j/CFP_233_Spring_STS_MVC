@@ -11,5 +11,9 @@ public class MyController {
 
         return "hello";
     }
-
+    @GetMapping("/web/message")
+    public String message(Model model){
+        model.addAttribute("message","Hello From Bridgelabz");
+        return "message";
+    }
 }
